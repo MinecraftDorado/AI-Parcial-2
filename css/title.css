@@ -1,0 +1,52 @@
+.title {
+    margin: 9rem auto 3rem;
+    max-width: 55%;
+    align-items: center;
+    text-align: center;
+}
+.title h2 {
+    word-break: break-word;
+    font-weight: 700;
+    font-size: 2.65rem;
+    line-height: 34px;
+    font-family: var(--title-font-family);
+    color: var(--title);
+}
+#Inicio .title h2 {
+    font-weight: 700;
+    font-size: 2.65rem;
+    color: white;
+}
+.title p {
+    word-break: break-word;
+    font-size: 1.1rem;
+    line-height: 30px;
+    font-family: var(--title-font-family);
+    color: var(--title-description);
+}
+#Inicio .title p {
+    font-size: 1.5rem;
+    color: #efeaea;
+    line-height: 24px;
+}
+
+.title a#contact {
+    color: var(--contact);
+    text-decoration: none;
+}
+
+.title a#contact:hover {
+    cursor: pointer;
+    color: var(--contact-hover);
+}
+
+/*
+  Responsive
+*/
+
+@media all and (max-width: 900px){
+    .title {
+        margin: 4.5rem auto 3rem;
+        max-width: 75%;
+    }
+}

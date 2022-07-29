@@ -1,0 +1,103 @@
+:root {
+    --card-background-color: var(--content-background);
+    --card-background-ratio: 6px;
+}
+
+.cards {
+    margin: 20px auto 10px;
+    border-radius: 5px;
+    max-width: 80%;
+    padding-top: 35px;
+
+    display: flex;
+    flex-direction: row;
+    flex-basis: 21.56rem;
+    flex-flow: row wrap;
+    gap: 1.25rem 1rem;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--card-background-color);
+    border-radius: var(--card-background-ratio);
+
+    color: var(--content-text);
+    text-align: center;
+    text-decoration: none;
+
+    width: 13rem;
+    height: 15.5rem;
+
+    background-repeat: no-repeat;
+    background-size: 106px;
+    background-position: center 14px;
+}
+
+.f-amarillo {
+    background-image: url("../img/filamentos/amarillo.jpg");
+}
+
+.f-blanco {
+    background-image: url("../img/filamentos/blanco.jpg");
+}
+
+.f-gris {
+    background-image: url("../img/filamentos/gris.webp");
+}
+
+.f-negro {
+    background-image: url("../img/filamentos/negro.jpg");
+}
+
+.l-estandar {
+    background-image: url("../img/resinas/estandar.png");
+}
+
+.l-transparente {
+    background-image: url("../img/resinas/transparente.png");
+}
+
+.l-calcinable {
+    background-image: url("../img/resinas/calcinable.png");
+}
+
+.l-flexible {
+    background-image: url("../img/resinas/flexible.png");
+}
+
+
+.card > .name {
+    color: var(--content-title);
+    word-break: break-word;
+    font-size: 1.125rem;
+    font-weight: 400 !;
+    line-height: 30px;
+}
+
+.card > .text p {
+    color: var(--content-text);
+    word-break: break-word;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 1rem .312rem 1rem !important;
+}
+
+
+
+.content > .cards {
+    gap: 1.25rem 5rem;
+}
+
+.cards > .card > .name {
+    color: var(--content-title);
+    padding-top: 7.25rem;
+    word-break: break-word;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.card > .name > h3,  .card > .text {
+    padding: 0;
+}

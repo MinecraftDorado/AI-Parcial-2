@@ -1,0 +1,50 @@
+:root {
+    /*  NAVBAR  */
+    --background-color: #dee8f0;
+    --navbar: #f6f6f6;
+
+    --botton: #263238;
+    --botton-select: #4f5b62;
+
+    --text: #000000;
+    --text-hover: #4f5b62;
+    --logo: #000000;
+
+    /*  TITLE   */
+    --title: #000000;
+    --title-font-family: 'Montserrat-Bold';;
+    --title-description: #8b949e;
+    
+    /*  CONTENT */
+    --content-background: var(--navbar);
+    --content-title: var(--title);
+    --content-text: var(--title-description);
+
+}
+body {
+    background-color: white;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+#Inicio {
+    background: no-repeat center url("../img/inicio.jpg");
+    position: static;
+    display: grid;
+    height: auto;
+    width: 100%;
+    min-height: 877px;
+    grid-template-columns: 100%;
+    grid-template-areas: "titulo" "titulo" "boton";
+    justify-items: center;
+    align-items: center;
+}
+
+#Inicio #titulo {grid-area: titulo;}
+
+#Inicio #boton {grid-area: boton;}
+
+#Inicio #boton svg {height: 5rem; fill: white;}
+
+#Impresoras {padding-top: 15px;}

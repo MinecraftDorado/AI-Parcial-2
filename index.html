@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impresion 3D</title>
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/title.css" rel="stylesheet">
+    <link href="css/content.css" rel="stylesheet">
+    <link href="css/cards.css" rel="stylesheet">
+    <link href="css/video.css" rel="stylesheet">
+
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/4f596f3945.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="icon" type="icons/png" href="img/logo.png">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="logo"><img src="img/logo.png"> Impresion 3D</li>
+            <li class="items"><a href="#Inicio">Inicio</a></li>
+            
+            <li class="items"><a href="#Impresoras">Impresoras</a></li>
+            <li class="items"><a href="#Videos">Videos</a></li>
+            <li class="items"><a href="#Modelos">Impresiones</a></li>
+            
+            <li class="btn"><a><i class="fas fa-bars"></i></a></li>
+        </ul>
+    </nav>
+
+    <div id="Inicio">
+        <div id="titulo" class="title">
+            <h2>Bienvenido a mi página!</h2>
+            <p>Aqui podras encontrar informacion relacionada con el mundo de la impresion 3D, sus caracteristicas, materiales, videos al respecto y modelos para imprimir</p>
+        </div>
+        <a id="boton" href="#Impresoras">
+            <svg preserveAspectRatio="xMidYMid meet" data-bbox="19.917 17 162 162" viewBox="19.917 17 162 162" height="200" width="200" xmlns="http://www.w3.org/2000/svg" role="presentation" aria-hidden="true" aria-labelledby="svgcid--r4569ubzwphv">
+                <g>
+                    <path d="M100.917 179c-44.664 0-81-36.337-81-81 0-44.664 36.336-81 81-81s81 36.336 81 81c0 44.663-36.337 81-81 81zm0-158c-42.458 0-77 34.542-77 77s34.542 77 77 77 77-34.542 77-77-34.542-77-77-77z"></path>
+                    <path d="M102.917 46.796v100.945h-4V46.796h4z"></path>
+                    <path d="M100.44 150.569L49.286 99.414l2.828-2.828 48.326 48.327 49.79-49.79 2.829 2.828-52.619 52.618z"></path>
+                </g>
+            </svg>
+        </a>
+    </div>
+
+    <div id="Impresoras">
+        <div class="title"><h2>Impresoras</h2></div>
+        <div class="content">
+            <div class="items" id="filamento">
+                <div class="item">
+                    <div id="titulo">
+                        <img src="https://w3r8z3y9.rocketcdn.me/wp-content/uploads/2020/12/Biqu-B1-Impresora3D-2.jpg">
+                        <h3>Impresora de filamento</h3>
+                        <p>Las impresoras de filamento consisten en ir depositando un plástico derretido, capa por capa. Esto se hace con el fin de poder conseguir el objeto 3D que queremos.</p>
+                    </div>
+                    <div id="caracteristicas">
+                        <h2>Ventajas</h2>
+                        <ul>
+                            <li>No se necesita un proceso de curado una vez finalizada la impresión 3D</li>
+                            <li>No necesita la impresión 3D un mantenimiento como la impresora de resina</li>
+                            <li>Es más económica</li>
+                            <li>Existen muchos tipos de materiales de filamento y de colores</li>
+                        </ul>
+                        <h2>Desventajas</h2>
+                        <ul>
+                            <li>No tiene tanto nivel de detalle.</li>
+                            <li>Cuesta conseguir un buen acabado en piezas pequeñas.</li>
+                            <li>El tiempo de impresión es mucho mayor</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="materiales">
+                    </br>
+                    <h2>Materiales</h2>
+                    <div class="cards">
+                        <a class="card f-amarillo">
+                            <div class="name"><h3>PLA</h3></div>
+                            <div class="text"><p>Es uno de los filamentos más utilizados gracias a que es muy estable y no necesita cama caliente</p></div>
+                        </a>
+                        <a class="card f-blanco">
+                            <div class="name"><h3>ABS</h3></div>
+                            <div class="text"><p>Se caracteriza por su gran resistencia, tanto a impactos como a altas temperaturas</p></div>
+                        </a>
+                        <a class="card f-negro">
+                            <div class="name"><h3>PETG</h3></div>
+                            <div class="text"><p>Es un material muy resistente a la corrosión, la temperatura, impactos y agentes químicos</p></div>
+                        </a>
+                        <a class="card f-gris">
+                            <div class="name"><h3>Flexible</h3></div>
+                            <div class="text"><p>Se caracteriza por su posibilidad de estiramiento y su resistencia a los impactos y roturas</p></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="items" id="resina">
+                <div class="item">
+                    <div id="titulo">
+                        <img src="https://uelectronics.com/wp-content/uploads/2020/08/AR1605-Impresora-Resina-3D-LD-002R-v3.jpg">
+                        <h3>Impresora de resina</h3>
+                        <p>Las impresoras de resina forman el modelo 3D, con un líquido fotocurable, capa por capa hasta terminar de completar el objeto. Estas impresoras usan una pantalla LCD o un láser que las hace ser más precisas</p>
+                    </div>
+                    <div id="caracteristicas">
+                        <h2>Ventajas</h2>
+                        <ul>
+                            <li>Gracias al láser permite la resolución de piezas muy detalladas por muy pequeñas que sean</li>
+                            <li>El tiempo es menor</li>
+                            <li>Podemos encontrar diferentes tipos de material de resina con diferentes colores</li>
+                            <li>Más nivel de detalle</li>
+                        </ul>
+                        <h2>Desventajas</h2>
+                        <ul>
+                            <li>Proceso de curado una vez finalizada la impresión 3D</li>
+                            <li>Mantenimiento de la impresora 3D</li>
+                            <li>Tienen un precio más elevado</li>
+                            <li>Se tiene que tener la pantalla en perfectas condiciones para un buen funcionamiento</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="materiales">
+                    </br>
+                    <h2>Materiales</h2>
+                    <div class="cards">
+                        <a class="card l-estandar">
+                            <div class="name"><h3>Estándar</h3></div>
+                            <div class="text"><p>Las resinas de tipo estándar nos deja con un acabado suave y una dureza en nuestras piezas</p></div>
+                        </a>
+                        <a class="card l-transparente">
+                            <div class="name"><h3>Transparente</h3></div>
+                            <div class="text"><p>Tiene como principal caracteristica el imprimir los objetos de forma transparente</p></div>
+                        </a>
+                        <a class="card l-calcinable">
+                            <div class="name"><h3>Calcinable</h3></div>
+                            <div class="text"><p>Estas resinas están diseñadas en casos que se requiera la fundición de la pieza</p></div>
+                        </a>
+                        <a class="card l-flexible">
+                            <div class="name"><h3>Flexible</h3></div>
+                            <div class="text"><p>Las resinas de impresión flexibles no permiten crear piezas con propiedades parecidas a las gomas</p></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Videos">
+        <div class="title"><h2>Videos</h2></div>
+
+        <section >
+            <video id="slider" autoplay controls>
+                <source src="video/1.mp4" type="video/mp4">
+            </video>
+        
+            <ul class="navegacion">
+                <li onclick="cargarVideo('video/1.mp4');">
+                    <img src="video/1.jpg">
+                </li>
+                <li onclick="cargarVideo('video/2.mp4');">
+                    <img src="video/2.jpg">
+                </li>
+                <li onclick="cargarVideo('video/3.mp4');">
+                    <img src="video/3.jpg">
+                </li>
+            </ul>
+     
+        </section>
+    </div>
+
+    <div id="Modelos">
+        <div class="title"><h2>Impresiones</h2></div>
+
+        <div class="content">
+            <a class="items" target="_blank" href="https://www.printables.com/es/model/225046-ferris-wheel-plant-stand">
+                <img src="https://media.printables.com/media/prints/225046/images/2054968_d24b0b0a-1160-482d-9f4e-3a17187368a4/thumbs/cover/640x480/jpg/main-image-1.webp">
+                <h3>Soporte de planta de rueda de la fortuna</h3>
+            </a>
+            <a class="items" target="_blank" href="https://www.printables.com/es/model/7876-rotating-rings-toy">
+                <img src="https://media.printables.com/media/prints/7876/images/59947_dffce728-7fee-476d-81d9-250fd3af26fb/thumbs/cover/640x480/jpg/dsc01937.webp">
+                <h3>Anillos giratorios de juguete</h3>
+            </a>
+            <a class="items" target="_blank" href="https://www.printables.com/es/model/228125-waffle-pattern-pot">
+                <img src="https://media.printables.com/media/prints/228125/images/2078916_171de704-9419-480e-93f8-4f8f7eb37eb5/thumbs/cover/640x480/jpg/pxl_20220618_185551054.webp">
+                <h3>Maceta con patrón de waffle</h3>
+            </a>
+            <a class="items" target="_blank" href="https://www.printables.com/es/model/234935-gear-shift-fidget">
+                <img src="https://media.printables.com/media/prints/234935/images/2131089_69092efa-5fe5-4cfb-80ae-0bd504662bf5/thumbs/cover/640x480/jpg/gear_shift_fidget_with_ring.webp">
+                <h3>Anillo de palanca de cambios</h3>
+            </a>
+            <a class="items" target="_blank" href="https://www.printables.com/es/model/286-chainmail-3d-printable-fabric">
+                <img src="https://media.printables.com/media/prints/286/images/2026_d5e76413-3249-4858-80b8-bb5544593431/thumbs/cover/640x480/jpg/e3a99bd15a5065753c1b63e71de63cdd_preview_featured.webp">
+                <h3>Cota de malla</h3>
+            </a>
+            <a class="items" target="_blank" href="https://www.printables.com/es/model/69464-split-flap-display">
+                <img src="https://media.printables.com/media/prints/69464/images/757807_e77ddd2d-72e7-44ac-a8ae-af2382483195/thumbs/cover/640x480/jpg/titlepic.webp">
+                <h3>Pantalla de solapa dividida</h3>
+            </a>
+            <a class="items" target="_blank" href="https://www.printables.com/es/model/19871-t-rex-skeleton-fixed-and-printable">
+                <img src="https://media.printables.com/media/prints/19871/images/194156_8b0785cd-cabf-41e9-a258-0c2cbe309ea8/thumbs/cover/640x480/jpg/img_6180_19871.webp">
+                <h3>Esqueleto de T-Rex</h3>
+            </a>
+            <a class="items" target="_blank" href="https://www.printables.com/es/model/60985-the-torture-toaster">
+                <img src="https://media.printables.com/media/prints/60985/images/639502_58225fb4-36bd-4f5f-8c77-3a472acae347/thumbs/cover/640x480/jpg/a1.webp">
+                <h3>Tostadora</h3>
+            </a>
+            <a class="items" target="_blank" href="https://www.printables.com/es/model/1161-phonetablet-stand-flat-fold-print-in-place">
+                <img src="https://media.printables.com/media/prints/1161/images/7458_be823588-aa29-4ba0-b723-dd762f80842d/thumbs/cover/640x480/jpg/small_openclosed.webp">
+                <h3>Soporte para telefono</h3>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
+<script>
+    $(document).ready(function () {
+        $('.btn').click(function () {
+            $('.items').toggleClass("show");
+        });
+    });
+    function cargarVideo(url){
+		document.getElementById('slider').src=url;
+	}	
+</script>
